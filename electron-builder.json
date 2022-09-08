@@ -1,0 +1,5 @@
+{
+  "extraResources": [
+    "dist/assets/*"
+  ]
+}

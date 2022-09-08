@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="w-screen h-screen overflow-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Discord Clone</title>
+</head>
+
+<body class="w-screen h-screen overflow-hidden bg-[#202225] flex flex-col">
+
+  <main class="grow flex items-stretch overflow-hidden">
+
+    <nav id="main-nav">
+      <ul>
+        <li
+          class="group relative px-2 mb-2 lg:px-5 lg:mb-3 after:absolute after:top-0.5 after:left-0 after:bottom-0.5 after:w-2 after:rounded-tr-[4px] after:rounded-br-[4px] hover:after:bg-white after:duration-300">
+          <a href="#"
+            class="block w-8 h-8 p-1 lg:w-12 lg:h-12 lg:p-2 rounded-[50%] bg-[#2F3136] cursor-pointer duration-300 group-hover:bg-[#FFFFFF] group-hover:rounded-2xl"><img
+              src="./src/assets/icons/discord.svg" alt=""></a>
+        </li>
+        <li
+          class="group relative px-2 mb-2 lg:px-5 lg:mb-3 after:absolute after:top-0.5 after:left-0 after:bottom-0.5 after:w-2 after:rounded-tr-[4px] after:rounded-br-[4px] hover:after:bg-white after:duration-300">
+          <a href="#"
+            class="block w-8 h-8 p-1 lg:w-12 lg:h-12 lg:p-2 rounded-[50%] bg-[#2F3136] cursor-pointer duration-300 group-hover:bg-[#FFFFFF] group-hover:rounded-2xl"><img
+              src="./src/assets/icons/emojis.svg" alt=""></a>
+        </li>
+        <li
+          class="group relative px-2 mb-2 lg:px-5 lg:mb-3 after:absolute after:top-0.5 after:left-0 after:bottom-0.5 after:w-2 after:rounded-tr-[4px] after:rounded-br-[4px] hover:after:bg-white after:duration-300">
+          <a href="#"
+            class="block w-8 h-8 p-1 lg:w-12 lg:h-12 lg:p-2 rounded-[50%] bg-[#2F3136] cursor-pointer duration-300 group-hover:bg-[#FFFFFF] group-hover:rounded-2xl"><img
+              src="./src/assets/icons/games.svg" alt=""></a>
+        </li>
+        <li
+          class="group relative px-2 mb-2 lg:px-5 lg:mb-3 after:absolute after:top-0.5 after:left-0 after:bottom-0.5 after:w-2 after:rounded-tr-[4px] after:rounded-br-[4px] hover:after:bg-white after:duration-300">
+          <a href="#"
+            class="block w-8 h-8 p-1 lg:w-12 lg:h-12 lg:p-2 rounded-[50%] bg-[#2F3136] cursor-pointer duration-300 group-hover:bg-[#FFFFFF] group-hover:rounded-2xl"><img
+              src="./src/assets/icons/plus.svg" alt=""></a>
+        </li>
+        <li
+          class="group relative px-2 mb-2 lg:px-5 lg:mb-3 after:absolute after:top-0.5 after:left-0 after:bottom-0.5 after:w-2 after:rounded-tr-[4px] after:rounded-br-[4px] hover:after:bg-white after:duration-300">
+          <a href="#"
+            class="block w-8 h-8 p-1 lg:w-12 lg:h-12 lg:p-2 rounded-[50%] bg-[#2F3136] cursor-pointer duration-300 group-hover:bg-[#FFFFFF] group-hover:rounded-2xl"><img
+              src="./src/assets/icons/search.svg" alt=""></a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="grow bg-[#36393F] rounded-tl-xl rounded-bl-xl flex items-stretch overflow-hidden">
+
+      <nav class="min-w-[12rem] lg:min-w-[20rem] bg-[#2F3136] flex flex-col">
+        <header
+          class="px-4 h-10 lg:px-5 lg:h-16 relative border-b-2 border-b-black flex justify-between items-center shrink-0">
+          <span class="text-[#FCFCFC] text-sm lg:text-2xl font-normal">Game Center</span>
+          <button id="header-option-btn"
+            class="w-3 h-3 bg-[url('../assets/icons/arrow-down-sign.svg')] bg-contain cursor-pointer"></button>
+          <ul id="header-option"
+            class="absolute top-14 lg:top-20 w-[85%] p-3 rounded-md bg-[#18191C] overflow-hidden scale-y-0 -translate-y-3 origin-top duration-200">
+            <li
+              class="p-2 text-[#f5f5f5]/[0.5] cursor-pointer mb-1 rounded-md hover:bg-indigo-400 hover:text-[#f5f5f5]/[1] duration-200">
+              Some Text 0</li>
+            <li
+              class="p-2 text-[#f5f5f5]/[0.5] cursor-pointer mb-1 rounded-md hover:bg-indigo-400 hover:text-[#f5f5f5]/[1] duration-200">
+              Some Text 1</li>
+            <li
+              class="p-2 text-[#f5f5f5]/[0.5] cursor-pointer mb-1 rounded-md hover:bg-indigo-400 hover:text-[#f5f5f5]/[1] duration-200">
+              Some Text 2</li>
+            <li
+              class="p-2 text-[#f5f5f5]/[0.5] cursor-pointer mb-1 rounded-md hover:bg-indigo-400 hover:text-[#f5f5f5]/[1] duration-200">
+              Some Text 3</li>
+            <li
+              class="p-2 text-[#f5f5f5]/[0.5] cursor-pointer mb-1 rounded-md hover:bg-indigo-400 hover:text-[#f5f5f5]/[1] duration-200">
+              Some Text 4</li>
+            <li
+              class="p-2 text-[#f5f5f5]/[0.5] cursor-pointer mb-1 rounded-md hover:bg-indigo-400 hover:text-[#f5f5f5]/[1] duration-200">
+              Some Text 5</li>
+          </ul>
+        </header>
+        <section
+          class="grow px-2 pt-5 overflow-y-auto scrollbar-track-transparent scrollbar-thin scrollbar-thumb-[#474A52]">
+          <section class="mb-6">
+            <div class="mb-3 uppercase text-[#8F9398] text-xs lg:text-base font-medium pl-5">Doorbell</div>
+            <ul id="chatList"></ul>
+          </section>
+        </section>
+        <footer class="flex justify-between items-center bg-[#2A2C31] py-1 px-1 lg:px-2">
+          <div id="nav-footer-title"
+            class="flex justify-start items-center mr-1 lg:mr-2 cursor-pointer hover:bg-[#ffffff]/[0.1] grow py-1 px-2 rounded-md relative">
+            <div class="w-6 h-6 lg:w-9 lg:h-9 rounded-full bg-slate-500 flex justify-center items-center mr-4">
+              <img src="./src/assets/icons/discord.svg" alt="" class="w-2/3">
+            </div>
+            <div class="flex flex-col justify-between text-[#FCFCFC]">
+              <span>Nurgeldi</span>
+              <span class="text-[#8F9398]">#4605</span>
+            </div>
+            <div id="info-board"
+              class="absolute bottom-[140%] left-0 bg-[#18191C] rounded-md overflow-hidden w-96 z-10 h-72 lg:h-96 duration-200 opacity-0 pointer-events-none">
+              <div class="w-full h-10 lg:h-20 p-2 lg:p-4 relative bg-indigo-500">
+                <div
+                  class="absolute w-14 lg:w-20 h-14 lg:h-20 p-3 border-4 border-black rounded-full bg-indigo-500 top-1/2">
+                  <img src="./src/assets/icons/discord.svg" alt="">
+                </div>
+              </div>
+              <div class="flex items-end text-[#FCFCFC] p-2 lg:p-4 pt-10 lg:pt-20">
+                <span class="text-xl lg:text-3xl">Nurgeldi</span>
+                <span class="text-[#8F9398] text-xs lg:text-2xl">#4605</span>
+              </div>
+              <div class="p-2 lg:p-4 text-[#8F9398]">Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Consequatur
+                voluptate rem commodi magni
+                similique alias fuga! Sapiente harum eos odit illo. Atque repellendus, eligendi fugiat molestiae nobis
+                reiciendis eum libero.</div>
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row">
+            <button
+              class="nav-footer-microphone w-8 h-8 bg-[url('../assets/icons/microphone.svg')] bg-[length:60%_60%] bg-center bg-no-repeat ml-1 cursor-pointer hover:bg-[#ffffff]/[0.1] rounded-md relative before:absolute before:top-1 before:-left-1 before:w-8 before:h-0.5 before:origin-right before:-rotate-45 before:opacity-50"></button>
+            <button
+              class="nav-footer-headphones w-8 h-8 bg-[url('../assets/icons/headphones.svg')] bg-[length:60%_60%] bg-center bg-no-repeat ml-1 cursor-pointer hover:bg-[#ffffff]/[0.1] rounded-md relative before:absolute before:top-1 before:-left-1 before:w-8 before:h-0.5 before:origin-right before:-rotate-45 before:opacity-50"></button>
+            <button
+              class="nav-footer-settings w-8 h-8 bg-[url('../assets/icons/settings.svg')] bg-[length:60%_60%] bg-center bg-no-repeat ml-1 cursor-pointer hover:bg-[#ffffff]/[0.1] rounded-md relative before:absolute">
+            </button>
+            <div id="settings"
+              class="fixed top-1/2 left-1/2 w-screen h-screen bg-[#2F3136] z-20 p-10 lg:p-36 pt-16 lg:pt-40 text-xl lg:text-3xl text-[#f5f5f5]/[0.5] text-left -translate-x-1/2 -translate-y-1/2 overflow-y-auto scrollbar-track-transparent scrollbar-thin scrollbar-thumb-[#202225] scale-150 opacity-0 duration-300 pointer-events-none">
+              <div>
+                Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Sunt quisquam perspiciatis iusto nihil,
+                qui
+                dolorum expedita veritatis recusandae dicta facere laborum nostrum illum dolores ut suscipit vel
+                <br></br>
+                temporibus ipsa sint.
+                Ullam sed expedita libero, accusantium animi qui, explicabo blanditiis ipsa aut iusto tempore deleniti
+                officiis distinctio temporibus corrupti reprehenderit, consectetur mollitia. Quod, perferendis
+                repudiandae. Voluptatem vitae laboriosam velit eum inventore?
+                <br></br>
+                Tenetur hic facere nulla, aut laborum ullam culpa harum sequi itaque reiciendis incidunt repellendus
+                consequatur iusto dignissimos laudantium officiis modi sunt quaerat, debitis quam, excepturi error
+                inventore adipisci! Excepturi, ex?
+                <br></br>
+                Fugit facilis eius dolor molestiae! Natus rem totam necessitatibus reiciendis illo, alias ipsa
+                suscipit
+                iure magnam odio sequi ut nulla molestiae vero inventore exercitationem incidunt, assumenda minus,
+                maxime aut maiores!
+                <br></br>
+                Facere sed cumque, reiciendis, aliquid odio rem minus quia ex temporibus dignissimos perferendis neque
+                et asperiores delectus voluptatibus, explicabo deserunt repellendus vel voluptate sit. Officia nemo id
+                ullam accusamus laudantium.
+              </div>
+              <button id="closeSettings"
+                class="absolute top-4 right-9 text-xl lg:text-3xl text-[#f5f5f5]/[0.5] uppercase cursor-pointer duration-150 hover:text-[#f5f5f5]">Close</button>
+            </div>
+          </div>
+        </footer>
+      </nav>
+
+      <section class="grow flex flex-col overflow-hidden">
+
+        <header class="px-4 h-10 lg:px-5 lg:h-16 shrink-0 border-b-2 border-b-black flex justify-between items-center">
+          <div class="flex items-center text-[#ffffff] text-xl lowercase">
+            <span class="text-xs lg:text-2xl mr-4 font-bold text-[#8F9398]">#</span>
+            <span id="chat-title" class="text-xs lg:text-2xl">Some Text</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <button
+              class="w-4 h-4 lg:w-8 lg:h-8 bg-[url('../assets/icons/bell.svg')] bg-contain ml-5 cursor-pointer"></button>
+            <button
+              class="w-4 h-4 lg:w-8 lg:h-8 bg-[url('../assets/icons/pin.svg')] bg-contain ml-5 cursor-pointer"></button>
+            <button
+              class="w-4 h-4 lg:w-8 lg:h-8 bg-[url('../assets/icons/people.svg')] bg-contain ml-5 cursor-pointer"></button>
+            <input type="search" autocomplete="on"
+              class="ml-5 bg-[#202225] rounded-md px-3 py-1 text-[#9f9f9f] placeholder:text-[#9f9f9f]"
+              placeholder="Search">
+            <button
+              class="w-4 h-4 lg:w-8 lg:h-8 bg-[url('../assets/icons/mail.svg')] bg-contain ml-5 cursor-pointer"></button>
+            <button
+              class="w-4 h-4 lg:w-8 lg:h-8 bg-[url('../assets/icons/info.svg')] bg-contain ml-5 cursor-pointer"></button>
+          </div>
+        </header>
+
+        <section class="grow flex flex-col justify-end overflow-hidden">
+          <div id="chat"
+            class="overflow-y-auto px-6 py-8 scrollbar-track-transparent scrollbar-thin scrollbar-thumb-[#202225]">
+          </div>
+          <footer
+            class="pt-3 lg:pt-6 px-3 lg:px-5 pb-8 relative after:absolute after:left-5 after:right-5 after:top-0 after:h-px after:bg-[#40444B]">
+            <div class="rounded-md bg-[#474A52] min-h-[40px] lg:min-h-[56px] pr-4 flex items-center overflow-hidden">
+              <button
+                class="shrink-0 h-[40px] lg:h-[56px] aspect-square cursor-pointer relative after:absolute after:left-1/2 after:top-1-2 after:w-4 lg:after:w-7 after:h-4 lg:after:h-7 after:bg-[#7E8186] after:rounded-full after:-translate-x-1/2 after:-translate-y-1/2 after:bg-[url('../assets/icons/plus.svg')] after:bg-[length:50%_50%] after:bg-center after:bg-no-repeat"></button>
+              <div id="msg-textarea"
+                class="max-h-[200px] break-words my-2 grow px-1 lg:px-3 bg-transparent border-l border-[#7E8186] outline-none text-[#8F9398] overflow-y-auto placeholder:text-[#8F9398] scrollbar-track-transparent scrollbar-thin scrollbar-thumb-[#202225]"
+                placeholder="Message" role="textbox" contenteditable></div>
+              <button
+                class="shrink-0 w-4 h-4 lg:w-7 lg:h-7 cursor-pointer ml-3 bg-contain bg-[url('../assets/icons/present.svg')]"></button>
+              <button
+                class="shrink-0 w-4 h-4 lg:w-7 lg:h-7 cursor-pointer ml-3 bg-contain bg-[url('../assets/icons/gif.svg')] relative"></button>
+              <button
+                class="shrink-0 w-4 h-4 lg:w-7 lg:h-7 cursor-pointer ml-3 bg-contain bg-[url('../assets/icons/smile.svg')]"></button>
+            </div>
+          </footer>
+        </section>
+
+      </section>
+
+    </section>
+  </main>
+  <script type="module" src="./src/js/index.js"></script>
+</body>
+
+</html>
